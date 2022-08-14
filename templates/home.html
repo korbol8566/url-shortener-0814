@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL shortener</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="form">
+        <h2>URL shortener</h2>
+        <form class="pure-form">
+            <p>
+                <input name="long" type="url" placeholder="Long URL">
+            </p>
+            <p>
+                <input name="custom" placeholder="Custom URL">
+            </p>
+            <p>
+                <button type="submit" class="pure-button pure-button-primary" formmethod="post">Shorten</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
